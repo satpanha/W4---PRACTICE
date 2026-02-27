@@ -40,7 +40,7 @@ class SettingsScreen extends StatelessWidget {
                     .map(
                       (theme) => ThemeColorButton(
                         themeColor: theme,
-                        onTap: (value) => themeColorProvider.setTheme(value),
+                        onTap: (value) => themeColorProvider.setTheme(value), isSelected: true,
                       ),
                     )
                     .toList(),
